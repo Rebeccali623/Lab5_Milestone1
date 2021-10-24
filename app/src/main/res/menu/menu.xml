@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/logOutItem"
         android:title="LogOut"/>
 
     <item
-        android:id="@+id/message"
+        android:id="@+id/addNoteItem"
         android:title="Add Note"/>
 </menu>
