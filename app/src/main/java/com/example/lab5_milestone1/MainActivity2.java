@@ -12,9 +12,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity2 extends AppCompatActivity {
 
     TextView textView2;
+    public static ArrayList<Note> notes = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,14 +46,13 @@ public class MainActivity2 extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+
+        if (item.getItemId() == R.id.addNoteItem) {
+            Intent intent = new Intent(this, ThirdActivity.class);
+            startActivity(intent);
+            return true;
+        }
         return false;
     }
-
-//    public void goToMain() {
-//        Intent intent = new Intent(this, MainActivity.class);
-//        SharedPreferences sharedPreferences = this.getSharedPreferences("com.example.lab5_milestone1", Context.MODE_PRIVATE);
-////        sharedPreferences.edit().remove("username").apply();
-//        startActivity(intent);
-//    }
 
 }
